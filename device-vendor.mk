@@ -97,6 +97,7 @@ PRODUCT_PACKAGES += \
     DMConfigUpdate \
     DMService \
     DiagMon \
+    Entitlement \
     GCS \
     HotwordEnrollment \
     LifeTimerService \
