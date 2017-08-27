@@ -116,6 +116,10 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/lge/bullhead/proprietary/app/ims/lib/arm64/libimsmedia_jni.so:system/app/ims/lib/arm64/libimsmedia_jni.so
 
+# FAKE
+PRODUCT_PACKAGES += \
+	IMSLinks
+
 PRODUCT_PACKAGES += \
     datastatusnotification \
     ims
