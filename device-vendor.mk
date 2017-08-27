@@ -17,11 +17,9 @@
 
 PRODUCT_COPY_FILES := \
     vendor/lge/bullhead/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon:lge \
-    vendor/lge/bullhead/proprietary/bin/athdiag:system/bin/athdiag:lge \
     vendor/lge/bullhead/proprietary/bin/btnvtool:system/bin/btnvtool:lge \
     vendor/lge/bullhead/proprietary/bin/cnd:system/bin/cnd:lge \
     vendor/lge/bullhead/proprietary/bin/cnss-daemon:system/bin/cnss-daemon:lge \
-    vendor/lge/bullhead/proprietary/bin/cnss_diag:system/bin/cnss_diag:lge \
     vendor/lge/bullhead/proprietary/bin/diag_klog:system/bin/diag_klog:lge \
     vendor/lge/bullhead/proprietary/bin/diag_mdlog:system/bin/diag_mdlog:lge \
     vendor/lge/bullhead/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon:lge \
