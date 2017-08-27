@@ -67,10 +67,6 @@ PRODUCT_COPY_FILES := \
     vendor/lge/bullhead/proprietary/etc/qcril.db:system/etc/qcril.db:lge \
     vendor/lge/bullhead/proprietary/etc/sap.conf:system/etc/sap.conf:lge \
     vendor/lge/bullhead/proprietary/etc/thermal-engine-8992.conf:system/etc/thermal-engine-8992.conf:lge \
-    vendor/lge/bullhead/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar:lge \
-    vendor/lge/bullhead/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar:lge \
-    vendor/lge/bullhead/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar:lge \
-    vendor/lge/bullhead/proprietary/framework/rcsservice.jar:system/framework/rcsservice.jar:lge \
     vendor/lge/bullhead/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
     vendor/lge/bullhead/proprietary/priv-app/DMService/lib/arm/libdmengine.so:system/priv-app/DMService/lib/arm/libdmengine.so \
     vendor/lge/bullhead/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
@@ -108,7 +104,6 @@ PRODUCT_PACKAGES += \
     atfwd \
     qcrilmsgtunnel \
     cneapiclient \
-    com.google.widevine.software.drm \
     qcrilhook \
     rcsimssettings \
     rcsservice
