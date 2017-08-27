@@ -41,7 +41,6 @@ PRODUCT_COPY_FILES := \
     vendor/lge/bullhead/proprietary/bin/radish:system/bin/radish:lge \
     vendor/lge/bullhead/proprietary/bin/rmt_storage:system/bin/rmt_storage:lge \
     vendor/lge/bullhead/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump:lge \
-    vendor/lge/bullhead/proprietary/bin/test_diag:system/bin/test_diag:lge \
     vendor/lge/bullhead/proprietary/bin/thermal-engine:system/bin/thermal-engine:lge \
     vendor/lge/bullhead/proprietary/bin/time_daemon:system/bin/time_daemon:lge \
     vendor/lge/bullhead/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:lge \
