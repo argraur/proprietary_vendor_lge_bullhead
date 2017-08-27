@@ -169,7 +169,7 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollment
+LOCAL_MODULE := HotwordEnrollmentWCD9330
 LOCAL_MODULE_OWNER := lge
 LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollment/HotwordEnrollment.apk
 LOCAL_CERTIFICATE := PRESIGNED
