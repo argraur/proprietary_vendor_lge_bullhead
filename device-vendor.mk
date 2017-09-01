@@ -15,7 +15,9 @@
 # limitations under the License.
 # LG Electronic's blob(s) necessary for Nexus 5X hardware
 
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
+    vendor/lge/bullhead/proprietary/app/ims/lib/arm64/libimscamera_jni.so:system/app/ims/lib/arm64/libimscamera_jni.so:lge \
+    vendor/lge/bullhead/proprietary/app/ims/lib/arm64/libimsmedia_jni.so:system/app/ims/lib/arm64/libimsmedia_jni.so:lge \
     vendor/lge/bullhead/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon:lge \
     vendor/lge/bullhead/proprietary/bin/btnvtool:system/bin/btnvtool:lge \
     vendor/lge/bullhead/proprietary/bin/cnd:system/bin/cnd:lge \
@@ -81,7 +83,6 @@ PRODUCT_COPY_FILES := \
     vendor/lge/bullhead/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
     vendor/lge/bullhead/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so
 
-# Time for proprietary packages!
 PRODUCT_PACKAGES += \
     HiddenMenu \
     RCSBootstraputil \
@@ -96,7 +97,7 @@ PRODUCT_PACKAGES += \
     DiagMon \
     Entitlement \
     GCS \
-    HotwordEnrollment \
+    HotwordEnrollmentWCD9330 \
     LifeTimerService \
     SprintDM \
     atfwd \
@@ -111,14 +112,14 @@ PRODUCT_COPY_FILES += \
     vendor/lge/bullhead/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/lge/bullhead/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/lge/bullhead/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
-    vendor/lge/bullhead/proprietary/app/ims/lib/arm64/libimscamera_jni.so:system/app/ims/lib/arm64/libimscamera_jni.so \
-    vendor/lge/bullhead/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/lge/bullhead/proprietary/app/ims/lib/arm64/libimsmedia_jni.so:system/app/ims/lib/arm64/libimsmedia_jni.so
+    vendor/lge/bullhead/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so
 
-# FAKE
-PRODUCT_PACKAGES += \
-	IMSLinks
-
+# Various things
 PRODUCT_PACKAGES += \
     datastatusnotification \
     ims
+
+# Some NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    NfcNci
